@@ -17,7 +17,6 @@ export default function isValidPassword(password = "") {
   const containsSpecialCharacter = /[!@#$%^&*(),.?":{}|<>]/;
 
   if (containsSpecialCharacter.test(password)) return false
-
   const isItMixed = containsLetters.test(password) &&
                     containsNumbers.test(password)
   if (!isItMixed) return false
@@ -40,7 +39,7 @@ export default function isValidPassword(password = "") {
   return true;
 }
 
-
+/// 1234
 function areThereAnyConsecutiveNumbers(str = "") {
   for (let i = 0; i < str.length - 2; i++) {
     const currentDigit = parseInt(str[i]);

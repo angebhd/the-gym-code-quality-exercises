@@ -17,10 +17,11 @@
 // }
 
 export default function getFoodObjects(objects) {
-  const foods = []
-  for (const object of objects) {
-    if (object.type === "Food") foods.push(object)
-  }
+  // const foods = []
+  // for (const object of objects) {
+  //   if (object.type === "Food") foods.push(object)
+  // }
 
+  return objects.filter((object) => object.type === "Food")
   return foods
 }
